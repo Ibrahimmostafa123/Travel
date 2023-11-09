@@ -1,0 +1,451 @@
+:root {
+    --main-color : #ffa500;
+    --text-shadow: 0px 1px 1px black;
+    --box-shadow: 0px 5px 5px -6px black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif; */
+}
+/* navbar start  */
+
+#navbar {
+    background: #f9f9f9;
+}
+#logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow:var(--text-shadow);
+    margin-bottom: 5px;
+}
+#logo span {
+    color: var(--main-color);
+}
+.navbar-toggler span {
+    color: var(--main-color);
+}
+.navbar-nav {
+    margin-left: 20px;
+}
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover {
+    background: var(--main-color);
+    color: white;
+}
+#navbar form button {
+    background: var(--main-color);
+    color: white;
+    border: none;
+
+}
+/* navbar end  */
+
+/* home section start  */
+
+.home {
+    width: 100%;
+    height: calc(100vh - 85px);
+    background-image: url(../images/bus2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: var(--text-shadow)
+}
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+    margin-top: 5px;
+}
+.changecontent::after {
+    content: '';
+    color: var(--main-color);
+    text-shadow: var(--text-shadow);
+    animation: changetxt 15s infinite linear;
+}
+@keyframes changetxt {
+    0%{content: "Egypt";}
+    10%{content: "France";}
+    20%{content: "Spain";}
+    30%{content: "United States";}
+    40%{content: "Dubai";}
+    50%{content: "Saudi Arabia";}
+    60%{content: "China";}
+    70%{content: "Pakistan";}
+    80%{content: "Italy";}
+    90%{content: "Turkey";}
+    100%{content: "Germany";}
+}
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a {
+    background: white;
+    padding: 10px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s ;
+}
+.home .content a:hover {
+    background: var(--main-color);
+    color: white;
+}
+@media (max-width: 850px) {
+    .home {
+        background-position: 50%;
+    }
+ 
+   
+}
+@media (max-width: 450px) {
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 30px;
+    }
+    .home .content p{
+        font-size: 13px;
+        padding: 0px 10px;
+    }
+}
+
+/* home section end */
+/* section book start  */
+.book {
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1 {
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    font-weight: 600;
+}
+.main-text h1 span {
+    color: var(--main-color);
+}
+.book .card {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+.book .row {
+    margin-top: 30px;
+}
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: var(--box-shadow);
+    height: 150px;
+}
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--main-color);
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover {
+    width: 170px;
+}
+@media (max-width: 765px) {
+    .book {
+        padding: 0;
+    }
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/* section packages start  */
+
+.packages .main-text h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+}
+.main-text h1 span {
+    color: var(--main-color);
+}
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0,1) 0px 4px 12px;
+    
+}
+.packages .card img {
+    border-radius: 5px;
+    background-size: cover;
+    height: 300px;
+}
+.packages .card .card-body {
+    background: transparent;
+}
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p {
+    font-size: 15px;
+}
+.checked {
+    color: var(--main-color);
+}
+.star i {
+    font-size: 15px;
+}
+.packages .card .card-body h6 {
+    font-size: 20px;
+}
+.packages .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: var(--main-color);
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* section packages start  */
+
+/* section services start  */
+
+.services {
+    background: #f9f9f9; 
+    margin-top: 50px;
+}
+.services .main-text h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.services .card {
+    box-shadow: rgba(0,0,0,0,1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.services .card i {
+    font-size: 60px;
+    text-align: center;
+    color: var(--main-color);
+    margin-top: 20px;
+}
+.services .card .card-body h3 {
+    font-weight: 550;
+}
+.services .card .card-body {
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+/* section services end  */
+
+/* section gallary start  */
+
+
+.gallary {
+    margin-top: 50px;
+}
+.gallary .card {
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0,1) 0px 4px 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.gallary .card img {
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 20px;
+}
+.gallary .card img:hover {
+    transform: scale(1.1);
+}
+
+/* section gallary end  */
+
+
+/* section about start  */
+
+.about {
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card {
+    border-radius: 10px;
+}
+.about .card img {
+    border-radius: 10px;
+}
+.about h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p {
+    font-weight: 500;
+}
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover {
+    width: 170px;
+    letter-spacing: 4px;
+}
+@media (max-width: 765px) {
+    .about {
+        padding: 0;
+    }
+}
+
+/* section about end  */
+
+/* footer start  */
+
+#footer {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1 {
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: var(--text-shadow);
+}
+#footer h1 span {
+    color: var(--main-color);
+}
+span {
+    color: var(--main-color);
+}
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover {
+    background: var(--main-color);
+}
+#footer .credit {
+    padding-top: 30px;
+    padding-bottom: 10px;
+} 
+#footer .credit p {
+    font-size: 18px;
+    font-weight: 500;
+}
+#footer .credit p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.copyright p {
+    font-weight: 500;
+    padding-bottom: 30px;
+    font-size: 20px;
+    
+}
+.copyright p span {
+    font-size: 30px;
+    font-weight: 800;
+}
+@media (max-width: 765px) {
+    .copyright p span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .copyright p {
+        font-weight: 400;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+/* footer end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section book end  */
